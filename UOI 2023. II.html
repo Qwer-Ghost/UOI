@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ua">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UOI 2023. II stage</title>
+    <link rel="stylesheet" href="docx_style/UOI.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Cascadia+Code:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Aptos:wght@700&display=swap" rel="stylesheet">
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+<body>
+    
+    <a target="_blank" href="https://uoi.eolymp.space/uk/compete/dc6hmgdlit4sr3ld36shj2tvbc" style=" position: fixed; top: 10px; left: 50%; transform: translateX(-50%);font-weight: bold; font-size: 30px;text-align: center;">UOI 2023. II stage</a>
+    <a title="Завантадити документ з роз'язками" href="docx_style/UOI 2023. II stage.docx" class='bx bxs-file-doc' style="position: fixed;top: 10px;font-size: 30px; left: 10%; "></a>
+    <a href="index.html" class='bx bxs-home'style="position: fixed;top: 10px;font-size: 30px; right: 5%;"></a>
+    <h1>Задача A</h1>
+    <p id="textToCopy_A">
+        #include <<t>iostream><br>using namespace std;<br>int main(){ int a, b, c, d;<br>cin >> a >> b >> c >> d;<br>cout << a + b + c - d;<br>}
+    </p>
+    <a  onclick="copyText_A()">Копіювати код</a>
+    <a target="_blank" href="https://uoi.eolymp.space/uk/compete/dc6hmgdlit4sr3ld36shj2tvbc/problem/1">Перейти до задачі</a>
+    
+    <h1>Задача B</h1>
+    <p id="textToCopy_B">
+        #include <<t>iostream><br>using namespace std;<br>int main() {<br>int a, c; cin >> a >> c;<br>cout << c + c - a;<br>}<br>
+    </p>
+    <a  onclick="copyText_B()">Копіювати код</a>
+    <a target="_blank" href="https://uoi.eolymp.space/uk/compete/dc6hmgdlit4sr3ld36shj2tvbc/problem/2">Перейти до задачі</a>
+    
+    <h1>Задача C</h1>
+    <p id="textToCopy_C">
+        #include <<t>iostream><br>using namespace std;<br>int main() {<br>int a, b, x, y; cin >> a >> b >> x >> y;<br>long long total = a + b * 2, score = (a - x) + (b - y) * 2;<br>cout <<t><<t> (score * 100 >= total * 51 ? "YES" : "NO");<br>}
+    </p>
+    <a  onclick="copyText_C()">Копіювати код</a>
+    <a target="_blank" href="https://uoi.eolymp.space/uk/compete/dc6hmgdlit4sr3ld36shj2tvbc/problem/3">Перейти до задачі</a>
+    
+    <h1>Задача D</h1>
+    <p id="textToCopy_D">
+        #include <<t>iostream><br>using namespace std;<br>int main() {<br>long long db, tb, wb, dm, tm, wm, M, B, dt, tt, T, minVal;<br>cin >> db >> tb >> wb;B = db + tb + wb;<br>cin >> dm >> tm >> wm; M = dm + tm + wm;<br>cin >> dt >> tt;T = dt + tt;<br>minVal = min({ B, M, T });<br>if (B == minVal) cout <<t><<t> "Bus";<br>else if (M == minVal) cout <<t><<t> "Metro";<br>else cout <<t><<t> "Taxi";<br>}
+    </p>
+    <a  onclick="copyText_D()">Копіювати код</a>
+    <a target="_blank" href="https://uoi.eolymp.space/uk/compete/dc6hmgdlit4sr3ld36shj2tvbc/problem/4">Перейти до задачі</a>
+    
+    <h1>Задача E</h1>
+    <p id="textToCopy_E">
+        #include <<t>iostream><br>using namespace std;<br>int main() {<br>int a, b, n, m, k, d = 1, res = 0; cin >> a >> b >> n >> m >> k;<br>while (d <<t>= k) {<br>for (int i = 0; i <<t> a && d <<t>= k; ++i) {<br>if (d % n == 0) res += 0;<br>else if (d % m == 0) res += 2;<br>else res += 1; ++d;<br>}d += b;}<br>cout <<t><<t> res;<br>} 
+    </p>
+    <a  onclick="copyText_E()">Копіювати код</a>
+    <a target="_blank" href="https://uoi.eolymp.space/uk/compete/dc6hmgdlit4sr3ld36shj2tvbc/problem/5">Перейти до задачі</a>
+    
+    <h1>Задача F</h1>
+    <p id="textToCopy_F">
+        #include <<t>iostream><br>#define for for(int i = 0; i <<t> n_m; i++)<br>using namespace std;<br>long long a[(int)200'000], b[(int)200'000];<br>int main() {<br>int n, m, n_m; cin >> n >> m;<br>n_m = n; for cin >> a[i]; n_m = m; for cin >> b[i];<br>long long e, scoreA = 0, scoreB = 0; cin >> e;<br>n_m = n; for  if (e * (e + 1) / 2 >= a[i]) scoreA += a[i];<br>else { scoreA += e * (e + 1) / 2; break; }<br>n_m = m; for if (e * (e + 1) / 2 >= b[i]) scoreB += b[i];<br>else { scoreB += e * (e + 1) / 2; break; }<br>if (scoreA == scoreB) cout <<t><<t> "Draw\n" <<t><<t> scoreA <<t><<t> ':' <<t><<t> scoreB;<br>else if (scoreA > scoreB) cout <<t><<t> "Danya\n" <<t><<t> scoreA <<t><<t> ':' <<t><<t> scoreB;<br>else cout <<t><<t> "Diana\n" <<t><<t> scoreB <<t><<t> ':' <<t><<t> scoreA <<t><<t> '\n';<br>} 
+    </p>
+    <a  onclick="copyText_F()">Копіювати код</a>
+    <a target="_blank" href="https://uoi.eolymp.space/uk/compete/dc6hmgdlit4sr3ld36shj2tvbc/problem/6">Перейти до задачі</a>
+    
+    <h1>Задача G</h1>
+    <p id="textToCopy_G">
+        #include <<t>iostream><br>#include <<t>vector><br>#include <<t>algorithm><br>#include <<t>limits><br>using namespace std;<br>struct atm {long long x, c;}; const long long INF = 2e18;<br>long long calc(long long capacity, const long long w, const vector<<t>atm>& v) {<br>vector<<t>long long> dp(v.size(), INF);dp[0] = 0;<br>for (int i = 1; i <<t> v.size(); ++i) <br>for (int j = 0; j <<t> i; ++j) <br>if (w * (v[i].x - v[j].x) <<t>= capacity && dp[j] <<t> INF) <br>dp[i] = min(dp[i], dp[j] + w * (v[i].x - v[j].x) * v[j].c);<br>return dp.back();<br>}<br>int main() { long long d, w, n; cin >> d >> w >> n;<br>vector<<t>atm> v(n);<br>for (auto& atm : v) cin >> atm.c;<br>for (auto& atm : v) cin >> atm.x;<br>sort(v.begin(), v.end(), [](const atm& a, const atm& b) {<br>if (a.x == b.x) return a.c <<t> b.c;<br>return a.x <<t> b.x;});<br>v.erase(unique(v.begin(), v.end(), [](const atm& a, const atm& b) {<br>return a.x == b.x;}), v.end());<br>v.push_back({ d, 0 });<br>long long minPrice = calc(numeric_limits<<t>long long>::max(), w, v),left = 0, right = 1e13;<br>while (left + 1 <<t> right) { long long mid = (left + right) / 2;<br>if (calc(mid, w, v) <<t>= minPrice) right = mid;else left = mid;}<br>cout <<t><<t> right;<br>}
+    </p>
+    <a  onclick="copyText_G()">Копіювати код</a>
+    <a target="_blank" href="https://uoi.eolymp.space/uk/compete/dc6hmgdlit4sr3ld36shj2tvbc/problem/7">Перейти до задачі</a>
+    
+    <h1>Задача H</h1>
+    <p id="textToCopy_H">
+        #include <<t>iostream><br>#include <<t>vector><br>#include <<t>algorithm><br>#include <<t>string><br>#define N 8 <br>#define for_k for(int k = 1; k <<t> N; k++)<br>#define for_0 for(int k = 1; k <<t>= N; k++)<br>using namespace std;<br>const char queen = 'Q', king = 'K', pawn = 'p', rook = 'r', knight = 'n', bishop = 'b';<br>char a[N][N]; bool can[N][N];<br>bool isC(int i, int j) { return 0 <<t>= i && i <<t> 8 && 0 <<t>= j && j <<t> 8;}<br>string toC(int i, int j) {  return string(1, 'a' + j) + to_string(8 - i); }<br>int bI, bJ, kI, kJ; vector<<t>string> f_T_B;<br>void ban(int i, int j) { if (isC(i, j)) {<br>  if (i == kI && j == kJ) f_T_B.push_back(toC(bI, bJ)); can[i][j] = false; } }<br>bool isE(int i, int j) { if (!isC(i, j)) return true; return a[i][j] == '.'; } <br>int main() {<br> ios_base::sync_with_stdio(false);<br> cin.tie(nullptr);<br> for (int i = 0; i <<t> N; ++i) { for (int j = 0; j <<t> N; ++j) { cin >> a[i][j];<br>if (a[i][j] == king) { a[i][j] = '.'; kI = i; kJ = j; }<br>if (a[i][j] == '.') can[i][j] = true; else can[i][j] = false; } }<br> for (int i = -1; i <<t>= 1; ++i) { for (int j = -1; j <<t>= 1; ++j) {<br>if (i == 0 && j == 0) continue; if (isC(kI + i, kJ + j)) { can[kI + i][kJ + j] = true; } } }<br> for (int i = 0; i <<t> N; ++i) { for (int j = 0; j <<t> N; ++j) { bI = i; bJ = j;<br>if (a[i][j] == pawn) { ban(i - 1, j - 1); ban(i - 1, j + 1); }<br>else if (a[i][j] == rook) { for_k { ban(i, j + k); if (!isE(i, j + k)) break; }<br> for_k { ban(i, j - k); if (!isE(i, j - k)) break; }<br> for_k { ban(i + k, j); if (!isE(i + k, j)) break; }<br> for_k { ban(i - k, j); if (!isE(i - k, j)) break; }<br>} else if (a[i][j] == knight) { ban(i - 2, j - 1); ban(i - 2, j + 1);<br> ban(i - 1, j + 2); ban(i + 1, j + 2); ban(i + 2, j + 1);<br> ban(i + 2, j - 1); ban(i + 1, j - 2); ban(i - 1, j - 2); <br>} else if (a[i][j] == bishop) {<br> for_0 { ban(i - k, j - k); if (!isE(i - k, j - k)) break; }<br> for_0 { ban(i + k, j + k); if (!isE(i + k, j + k)) break; }<br> for_0 { ban(i - k, j + k); if (!isE(i - k, j + k)) break; }<br> for_0 { ban(i + k, j - k); if (!isE(i + k, j - k)) break;}<br>} else if (a[i][j] == queen) { for_k { ban(i, j + k); if (!isE(i, j + k)) break; }<br> for_k { ban(i, j - k); if (!isE(i, j - k)) break; }<br> for_k { ban(i + k, j); if (!isE(i + k, j)) break; }<br> for_k { ban(i - k, j); if (!isE(i - k, j)) break; }<br> for_0 { ban(i - k, j - k); if (!isE(i - k, j - k)) break; }<br> for_0 { ban(i + k, j + k); if (!isE(i + k, j + k)) break; }<br> for_0 { ban(i - k, j + k); if (!isE(i - k, j + k)) break; }<br> for_0 { ban(i + k, j - k); if (!isE(i + k, j - k)) break; }<br>} } } vector<<t>string> ava;<br> for (int i = -1; i <<t>= 1; ++i)  for (int j = -1; j <<t>= 1; ++j) { if (i == 0 && j == 0) continue;<br>  if (isC(kI + i, kJ + j) && can[kI + i][kJ + j]) ava.push_back(toC(kI + i, kJ + j));}<br> sort(ava.begin(), ava.end()); sort(f_T_B.begin(), f_T_B.end());<br> if (!can[kI][kJ] && ava.empty()) { cout <<t><<t> "Checkmate\n"; for (auto& i : f_T_B) cout <<t><<t> i <<t><<t> '\n'; }<br> else if (can[kI][kJ] && ava.empty()) cout <<t><<t> "Stalemate\n";<br> else { cout <<t><<t> "Continue\n"; for (auto& i : ava) cout <<t><<t> i <<t><<t> '\n'; }<br>}
+    </p>
+    <a  onclick="copyText_H()">Копіювати код</a>
+    <a target="_blank" href="https://uoi.eolymp.space/uk/compete/dc6hmgdlit4sr3ld36shj2tvbc/problem/8">Перейти до задачі</a>
+    
+
+
+
+
+
+    <script>
+        function copyText_A() {
+            var text = document.getElementById("textToCopy_A").innerText;
+            navigator.clipboard.writeText(text).then(function() {
+                alert("Текст скопійовано: " + text);
+            }, function(err) {
+                alert("Не вдалося скопіювати текст: ", err);
+            });
+        }
+    </script><script>
+        function copyText_B() {
+            var text = document.getElementById("textToCopy_B").innerText;
+            navigator.clipboard.writeText(text).then(function() {
+                alert("Текст скопійовано: " + text);
+            }, function(err) {
+                alert("Не вдалося скопіювати текст: ", err);
+            });
+        }
+    </script>
+    <script>
+        function copyText_C() {
+            var text = document.getElementById("textToCopy_C").innerText;
+            navigator.clipboard.writeText(text).then(function() {
+                alert("Текст скопійовано: " + text);
+            }, function(err) {
+                alert("Не вдалося скопіювати текст: ", err);
+            });
+        }
+    </script><script>
+        function copyText_D() {
+            var text = document.getElementById("textToCopy_D").innerText;
+            navigator.clipboard.writeText(text).then(function() {
+                alert("Текст скопійовано: " + text);
+            }, function(err) {
+                alert("Не вдалося скопіювати текст: ", err);
+            });
+        }
+    </script><script>
+        function copyText_E() {
+            var text = document.getElementById("textToCopy_E").innerText;
+            navigator.clipboard.writeText(text).then(function() {
+                alert("Текст скопійовано: " + text);
+            }, function(err) {
+                alert("Не вдалося скопіювати текст: ", err);
+            });
+        }
+    </script><script>
+        function copyText_F() {
+            var text = document.getElementById("textToCopy_F").innerText;
+            navigator.clipboard.writeText(text).then(function() {
+                alert("Текст скопійовано: " + text);
+            }, function(err) {
+                alert("Не вдалося скопіювати текст: ", err);
+            });
+        }
+    </script>
+    <script>
+        function copyText_G() {
+            var text = document.getElementById("textToCopy_G").innerText;
+            navigator.clipboard.writeText(text).then(function() {
+                alert("Текст скопійовано: " + text);
+            }, function(err) {
+                alert("Не вдалося скопіювати текст: ", err);
+            });
+        }
+    </script><script>
+        function copyText_H() {
+            var text = document.getElementById("textToCopy_H").innerText;
+            navigator.clipboard.writeText(text).then(function() {
+                alert("Текст скопійовано: " + text);
+            }, function(err) {
+                alert("Не вдалося скопіювати текст: ", err);
+            });
+        }
+    </script>
+</body>
+</html>
