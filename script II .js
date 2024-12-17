@@ -38,3 +38,21 @@ function copyText_H() {
     navigator.clipboard.writeText(text).then(function() { alert("Код задачі H скопійовано."); }, 
     function(err) { alert("Не вдалося скопіювати текст: ", err); });
 }
+// Перевіряємо наявність обраної теми при завантаженні сторінки
+document.addEventListener('DOMContentLoaded', function() {
+    const savedTheme = localStorage.getItem('theme');
+    if (savedTheme) {
+        document.body.classList.add(savedTheme);
+    }
+});
+
+document.getElementById('themeButton').addEventListener('click', function() {
+    document.body.classList.toggle('dark-theme');
+    
+    // Зберігаємо обрану тему в localStorage
+    if (document.body.classList.contains('dark-theme')) {
+        localStorage.setItem('theme', 'dark-theme');
+    } else {
+        localStorage.removeItem('theme');
+    }
+});
