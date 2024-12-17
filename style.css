@@ -29,3 +29,27 @@ a:hover{
     font-size: 40px;
     text-align: center;
 }
+.dark-theme a{
+    background: linear-gradient(to top,rgb(25, 25, 25), rgb(50, 50, 50), rgb(100, 100, 100) );
+    color: white;
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 22px;
+    border: none;
+    border-radius: 1000px;
+    box-shadow: 2px 2px 15px rgba(0,0,0,0.3);
+    font-family: 'Cascadia Code', monospace;
+    cursor: pointer;
+    margin: 30px;
+    font-weight: bold
+
+}
+body.dark-theme{
+    background: rgb(50, 50, 50);
+    color: white;
+}
+.dark-theme a:hover{
+    transition: 0.25s;
+    background: linear-gradient(to top,rgb(50, 50, 50), rgb(100, 100, 100), rgb(160, 160, 160) );
+    color: white;
+}
